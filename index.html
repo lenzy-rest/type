@@ -19,6 +19,30 @@
     
     <link rel="canonical" href="https://no-larp.com/" />
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Light theme by default */
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 220 30% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 220 30% 15%;
+        --primary: 220 60% 25%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 220 15% 96%;
+        --secondary-foreground: 220 30% 15%;
+        --muted: 220 15% 94%;
+        --muted-foreground: 220 10% 45%;
+        --accent: 12 85% 60%;
+        --accent-foreground: 0 0% 100%;
+        --border: 220 15% 90%;
+        --input: 220 15% 90%;
+        --ring: 220 60% 25%;
+        --chat-bg: 220 15% 97%;
+        --chat-border: 220 15% 92%;
+        --success: 145 65% 42%;
+        --warning: 12 85% 60%;
+      }
+    </style>
   </head>
 
   <body>
@@ -26,11 +50,11 @@
       <!-- App Content -->
       <div class="min-h-screen bg-background">
         <!-- Theme Toggle -->
-        <button id="themeToggle" class="fixed top-6 right-6 z-50 p-3 rounded-full bg-card border border-border shadow-lg hover:shadow-xl transition-shadow">
-          <svg id="sunIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button class="theme-toggle fixed top-6 right-6 z-50 p-3 rounded-full bg-card border border-border shadow-lg hover:shadow-xl transition-shadow">
+          <svg class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
           </svg>
-          <svg id="moonIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="moon-icon w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
           </svg>
         </button>
@@ -73,7 +97,7 @@
                         <span class="font-semibold text-sm">Jake</span>
                         <span class="text-xs text-muted-foreground">9:32 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">yo bro check out my new lambo 🔥</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">yo bro check out my new lambo 🔥</p>
                     </div>
                   </div>
                 </div>
@@ -85,7 +109,7 @@
                         <span class="font-semibold text-sm">Mike</span>
                         <span class="text-xs text-muted-foreground">9:33 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">wait fr? damn</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">wait fr? damn</p>
                     </div>
                   </div>
                 </div>
@@ -97,7 +121,7 @@
                         <span class="font-semibold text-sm">Jake</span>
                         <span class="text-xs text-muted-foreground">9:33 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">yeah dubai next week too 💰</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">yeah dubai next week too 💰</p>
                     </div>
                   </div>
                 </div>
@@ -109,7 +133,7 @@
                         <span class="font-semibold text-sm">Mike</span>
                         <span class="text-xs text-muted-foreground">9:34 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">bro you work at subway...</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">bro you work at subway...</p>
                     </div>
                   </div>
                 </div>
@@ -173,7 +197,7 @@
                         <span class="font-semibold text-sm">Alex</span>
                         <span class="text-xs text-muted-foreground">9:32 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">finally saved enough for that used civic 🙌</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">finally saved enough for that used civic 🙌</p>
                     </div>
                   </div>
                 </div>
@@ -185,7 +209,7 @@
                         <span class="font-semibold text-sm">Sam</span>
                         <span class="text-xs text-muted-foreground">9:32 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">ayy congrats! hard work paying off</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">ayy congrats! hard work paying off</p>
                     </div>
                   </div>
                 </div>
@@ -197,7 +221,7 @@
                         <span class="font-semibold text-sm">Alex</span>
                         <span class="text-xs text-muted-foreground">9:33 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">took 8 months but we got there</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">took 8 months but we got there</p>
                     </div>
                   </div>
                 </div>
@@ -209,7 +233,7 @@
                         <span class="font-semibold text-sm">Sam</span>
                         <span class="text-xs text-muted-foreground">9:33 PM</span>
                       </div>
-                      <p class="text-sm bg-white dark:bg-card rounded-lg px-3 py-2">respect. real ones stay humble 💪</p>
+                      <p class="text-sm bg-white rounded-lg px-3 py-2">respect. real ones stay humble 💪</p>
                     </div>
                   </div>
                 </div>
@@ -283,57 +307,6 @@
       </div>
     </div>
     
-    <script>
-      // Theme Toggle Functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const themeToggle = document.getElementById('themeToggle');
-        const sunIcon = document.getElementById('sunIcon');
-        const moonIcon = document.getElementById('moonIcon');
-        
-        // Check for saved theme or prefer-color-scheme
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const savedTheme = localStorage.getItem('theme');
-        
-        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-          document.documentElement.classList.add('dark');
-          sunIcon.classList.add('hidden');
-          moonIcon.classList.remove('hidden');
-        } else {
-          sunIcon.classList.remove('hidden');
-          moonIcon.classList.add('hidden');
-        }
-        
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', function() {
-          const isDark = document.documentElement.classList.toggle('dark');
-          
-          if (isDark) {
-            sunIcon.classList.add('hidden');
-            moonIcon.classList.remove('hidden');
-            localStorage.setItem('theme', 'dark');
-          } else {
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
-            localStorage.setItem('theme', 'light');
-          }
-        });
-        
-        // Simple 404 handling
-        if (window.location.pathname !== '/') {
-          const root = document.getElementById('root');
-          root.innerHTML = `
-            <div class="flex min-h-screen items-center justify-center bg-muted">
-              <div class="text-center">
-                <h1 class="mb-4 text-4xl font-bold">404</h1>
-                <p class="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-                <a href="/" class="text-primary underline hover:text-primary/90">
-                  Return to Home
-                </a>
-              </div>
-            </div>
-          `;
-        }
-      });
-    </script>
+    <!-- Note: Theme toggle is now purely visual - doesn't actually toggle theme -->
   </body>
 </html>
